@@ -1,0 +1,15 @@
+[package]
+name = "brine"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ferinth = "2.7.0"
+furse = "1.5.5"
+eframe = {version = "0.19.0", optional = true}
+
+[features]
+default = ["gui"]
+gui = ["eframe"]
