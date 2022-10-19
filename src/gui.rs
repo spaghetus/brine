@@ -42,7 +42,7 @@ impl BrineGui {
 							ui.label("Unimplemented");
 						});
 					ui.separator();
-					ui.horizontal(|ui| {
+					ui.horizontal_centered(|ui| {
 						if ui.button("New").clicked() {
 							// TODO
 						}
@@ -52,6 +52,7 @@ impl BrineGui {
 					});
 				},
 			);
+			ui.separator();
 			ui.allocate_ui_with_layout(
 				Vec2::new(ui.available_width() - 250.0, 60.0),
 				Layout::top_down_justified(Align::Center),
@@ -64,6 +65,7 @@ impl BrineGui {
 					}
 				},
 			);
+			ui.separator();
 			ui.vertical(|ui| {
 				ui.heading("Welcome, Username!");
 				ui.label("Not ready to play");
